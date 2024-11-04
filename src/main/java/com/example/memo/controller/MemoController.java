@@ -54,4 +54,10 @@ public class MemoController {
 
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteMemo(@PathVariable Long id) {
+
+        memoList.remove(id);
+    }
+
 }
